@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probut View</title>
+    <style>
+        .container{
+            margin:10px;
+            padding:20px;
+            display:flex;
+            justify-content:center;
+        }
+       .container1
+       {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        justify-content: center;
+
+       }
+      .img{
+        height:500px;
+        width:500px;
+        object-fit: cover;
+        border: 2px solid black;
+        border-radius: 24px;
+        box-sizing: 0px 0px 10px 0px rgb(140, 127, 127);
+
+       }
+       .image{
+        height:100px;
+        width:100px;
+        object-fit: cover;
+        border: 2px solid black;
+        border-radius: 24px;
+        box-sizing: 0px 0px 10px 0px rgb(140, 127, 127);
+        margin:10px;
+
+       }
+
+   </style>
+</head>
+<body>
+<h2>Product view</h2>
+<div class="container">
+<div class="iteam">
+    <img src="./images/phone1.jpg"class="img"id="mainImage">
+</div>
+    </div>
+    <div class="container1">
+        <img src="./images/phone2.jpg"class="image"onclick="changeImage(1)">
+        <img src="./images/phone3.jpg"class="image"onclick="changeImage(2)">
+        <img src="./images/phone4.jpg"class="image"onclick="changeImage(3)">
+        <img src="./images/phone5.jpg"class="image"onclick="changeImage(4)">
+        <img src="./images/phone6.jpg"class="image"onclick="changeImage(5)">
+        </div> 
+        <script>
+function changeImage(num)
+{
+    const mainImage=document.getElementById('mainImage');
+    if(num===1){
+        mainImage.src="./images/phone2.jpg";
+
+
+    }
+  else if(num===2){
+        mainImage.src="./images/phone3.jpg";
+        
+    }
+   else if(num===3){
+        mainImage.src="./images/phone4.jpg";
+        
+    }
+    else if(num===4){
+        mainImage.src="./images/phone5.jpg";
+        
+    }
+    else if(num===5){
+        mainImage.src="./images/phone6.jpg";
+        
+    }
+
+}
+
+
+        </script>
+</body>
+</html>
